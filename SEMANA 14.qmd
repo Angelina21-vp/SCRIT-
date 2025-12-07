@@ -1,0 +1,55 @@
+---
+title: "semana 14"
+author: "Angelina Silvana Vargas Coello"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+#ANALISIS UNIVARIADO\
+#ESTADISTICOS DESCRIPTIVOS
+
+```{r}
+summary(data$edad )
+```
+
+#HISTOGRAMA
+
+```{r}
+hist(data$edad,
+     main = "histograma de edad",
+     xlab = "edad",
+     col="skyblue",
+     border = "black")
+
+```
+
+#MULTIVARIADO
+
+```{r}
+modelo_multiple <-lm(religion ~ edad + Anios_Dx + Sexo, data = data)
+
+
+```
+
+#VER EL RESULTADO
+
+```{r}
+summary(modelo_multiple)
+
+```
+
+#REGRESION
+
+```{r}
+modelo <- lm(religion ~ edad, data = data)
+summary(modelo)
+
+```
