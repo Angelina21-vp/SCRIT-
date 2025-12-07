@@ -1,0 +1,62 @@
+---
+title: "Semana 12"
+author: "Angelina Silvana Vargas Coello"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+#calcula las medidas de dispersicion
+
+#varianza
+
+```{r}
+var(data$edad)
+```
+
+#DESVIACION ESTANDAR
+
+```{r}
+sd(data$edad)
+```
+
+#RANGO
+
+```{r}
+range(data$edad)
+```
+
+#Rango Intercuartilico
+
+```{r}
+IQR(data$edad)
+```
+
+#MEDIDAS DE POSICION
+
+#cuartiles
+
+```{r}
+quantile(data$edad)
+```
+
+#Visualizar las primeras 6 filas
+
+```{r}
+head(data)
+
+```
+
+#Visualizar un resumen general de la variable
+
+```{r}
+summary(data$edad)
+
+```
